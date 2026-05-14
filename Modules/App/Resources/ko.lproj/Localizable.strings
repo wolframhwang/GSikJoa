@@ -1,0 +1,59 @@
+/* G식좋아 — Korean (default) */
+
+"app.name" = "G식좋아";
+"app.tagline" = "세상 돌아가는 원리를 퀴즈로 씹어먹자";
+
+"tab.home" = "홈";
+"tab.packs" = "카드팩";
+"tab.vault" = "보관함";
+"tab.me" = "나";
+
+"home.greeting" = "오늘도 한 입,\n씹어볼까요?";
+"home.todayPacks" = "오늘의 카드팩";
+"home.viewAll" = "전체 보기 →";
+"home.moodHeader" = "오늘 머리 상태";
+"home.vaultEntry" = "개념 보관함";
+"home.vaultBlurb" = "씹어먹은 개념이 모이는 곳";
+
+"mood.easy" = "오늘은 쉽게";
+"mood.normal" = "평소대로";
+"mood.hard" = "빡세게";
+
+"difficulty.l1" = "가벼운맛";
+"difficulty.l2" = "기본맛";
+"difficulty.l3" = "매운맛";
+"difficulty.l4" = "지옥맛";
+
+"domain.economy" = "경제";
+"domain.physics" = "물리";
+"domain.statistics" = "통계";
+
+"quiz.confirm" = "확인하기";
+"quiz.next" = "다음 문제 →";
+"quiz.viewResult" = "결과 보기";
+"quiz.feedback.correct" = "한 입 잘 씹었어요!";
+"quiz.feedback.wrong" = "아쉽! 이렇게 봐요";
+
+"result.headline.great" = "완벽하게 씹어먹었네요!";
+"result.headline.ok" = "괜찮은 식사였어요";
+"result.headline.again" = "한 번 더 가볼까요?";
+"result.label.accuracy" = "정답률";
+"result.label.correct" = "정답";
+"result.label.wrong" = "오답";
+"result.label.concepts" = "개념";
+"result.gained" = "획득한 개념";
+"result.weak" = "다시 만날 약점";
+"result.againCTA" = "한 번 더 풀기";
+"result.homeCTA" = "홈으로 돌아가기";
+
+"settings.streakLabel" = "연속 학습";
+"settings.perDomain" = "도메인별 난이도";
+"settings.palette" = "팔레트";
+"settings.legal.title" = "💡 G식좋아는 투자 권유를 하지 않아요.";
+"settings.legal.body" = "원리 학습 전용. 매수/매도 신호는 다른 곳에서.";
+
+"onboarding.step1.title" = "어떤 분야가 궁금해요?";
+"onboarding.step2.title" = "오늘 머리는 어디까지 씹을까요?";
+"onboarding.next" = "다음";
+"onboarding.start" = "시작하기";
+"onboarding.back" = "이전으로";

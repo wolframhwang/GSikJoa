@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Xcode
+xcuserdata/
+DerivedData/
+build/
+*.xcuserstate
+
+# Tuist (auto-generated; regenerate via `tuist generate`)
+Derived/
+*.xcworkspace/
+*.xcodeproj/
+.tuist-version
+.tuist-bin/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Local logs / artifacts
+*.log
+
+# Build outputs
+build/
+*.xcarchive/
+*.ipa
