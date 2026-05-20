@@ -55,6 +55,8 @@ private struct MainTabContainer: View {
     @EnvironmentObject private var coordinator: AppCoordinator
     @Environment(\.palette) private var palette
 
+    private static let tabBarReservedHeight: CGFloat = 96
+
     var body: some View {
         ZStack(alignment: .bottom) {
             Group {
@@ -99,6 +101,9 @@ private struct MainTabContainer: View {
                         weekFilled: coordinator.thisWeekFilled
                     )
                 }
+            }
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                Color.clear.frame(height: Self.tabBarReservedHeight)
             }
 
             BottomTabBar(active: $coordinator.tab)

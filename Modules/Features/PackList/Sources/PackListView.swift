@@ -71,7 +71,6 @@ public struct PackListView: View {
                             }
                         }
                     }
-                    Spacer().frame(height: 110)
                 }
                 .padding(.horizontal, 22)
                 .padding(.top, 64)

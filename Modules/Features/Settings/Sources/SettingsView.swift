@@ -36,7 +36,6 @@ public struct SettingsView: View {
                     perDomainSection
                     paletteSection
                     legalNotice
-                    Spacer().frame(height: 110)
                 }
                 .padding(.horizontal, 22)
                 .padding(.top, 64)

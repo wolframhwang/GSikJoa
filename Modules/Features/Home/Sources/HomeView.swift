@@ -63,7 +63,6 @@ public struct HomeView: View {
                     sessionToggle
                     todayPacks
                     vaultEntry
-                    Spacer().frame(height: 110)
                 }
                 .padding(.horizontal, 22)
                 .padding(.top, 64)
