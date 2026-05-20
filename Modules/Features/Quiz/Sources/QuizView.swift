@@ -220,11 +220,27 @@ private struct ChoiceButton: View {
 
     @Environment(\.palette) private var palette
 
+    private var isPendingSelection: Bool {
+        isSelected && !isCorrect && !isWrong
+    }
+
     private var background: Color {
         if isCorrect { return palette.correct }
         if isWrong { return palette.wrong }
-        if isSelected { return palette.soft }
+        if isPendingSelection { return palette.primary.opacity(0.28) }
         return palette.surface
+    }
+
+    private var borderColor: Color {
+        isPendingSelection ? palette.primaryDeep : palette.ink
+    }
+
+    private var borderWidth: CGFloat {
+        isPendingSelection ? 3.5 : 2.5
+    }
+
+    private var letterCircleFill: Color {
+        isPendingSelection ? palette.primary : .white
     }
 
     private var letter: String {
@@ -244,7 +260,7 @@ private struct ChoiceButton: View {
         Button(action: action) {
             HStack(spacing: 12) {
                 ZStack {
-                    Circle().fill(.white)
+                    Circle().fill(letterCircleFill)
                     Circle().strokeBorder(palette.ink, lineWidth: 2)
                     Text(letter)
                         .font(AppFont.heading(size: 16, weight: .heavy))
@@ -263,7 +279,7 @@ private struct ChoiceButton: View {
                 RoundedRectangle(cornerRadius: 20).fill(background)
             )
             .overlay(
-                RoundedRectangle(cornerRadius: 20).strokeBorder(palette.ink, lineWidth: 2.5)
+                RoundedRectangle(cornerRadius: 20).strokeBorder(borderColor, lineWidth: borderWidth)
             )
             .background(
                 RoundedRectangle(cornerRadius: 20).fill(palette.ink).offset(y: isSelected ? 2 : 5)
@@ -272,7 +288,7 @@ private struct ChoiceButton: View {
         }
         .buttonStyle(.plain)
         .disabled(isDisabled)
-        .animation(.easeOut(duration: 0.12), value: isSelected)
+        .animation(.easeOut(duration: 0.18), value: isSelected)
     }
 }
 
