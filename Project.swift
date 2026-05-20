@@ -88,7 +88,7 @@ let appTarget: Target = .target(
         ],
         "CFBundleDisplayName": "G식좋아",
         "CFBundleShortVersionString": "0.1.1",
-        "CFBundleVersion": "1",
+        "CFBundleVersion": "3",
         "UIUserInterfaceStyle": "Light",
         "CFBundleDevelopmentRegion": "ko",
         "CFBundleAllowMixedLocalizations": false,
